@@ -4,8 +4,8 @@
 int anagrammeja(char mj1[], char mj2[])
 {
     int i, j;
-    int counter1 = 0;
-    int counter2 = 0;
+    int counter1;
+    int counter2;
 
     if (strlen(mj1) != strlen(mj2))
     {
@@ -14,6 +14,8 @@ int anagrammeja(char mj1[], char mj2[])
 
     for (i = 0; i < strlen(mj1); i++)
     {
+        counter1 = 0;
+        counter2 = 0;
         
         for (j = 0; j < strlen(mj1); j++)
         {
